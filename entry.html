@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Disk Scheduling Algorithms</title>
     <style>
         * {
@@ -15,11 +15,40 @@
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            font-size: 1.5rem;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
         }
 
         .container {
@@ -29,6 +58,7 @@
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin: 40px auto;
         }
 
         h1 {
@@ -87,10 +117,30 @@
             button {
                 font-size: 1rem;
             }
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar ul {
+                margin-top: 10px;
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Disk Scheduling</h2>
+        <ul>
+            <li><a href="index.html">Visualizer</a></li>
+            <li><a href="info.html">Learn</a></li>
+            <li><a href="waterfall.html">Waterfall Model</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <h1>Disk Scheduling Algorithms</h1>
         <p class="welcome-text">

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Waterfall Model - Disk Scheduling Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h2 {
+      font-size: 1.5rem;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p, ul li {
+      line-height: 1.6;
+    }
+
+    .phase {
+      margin-top: 30px;
+    }
+
+    .phase h2 {
+      font-size: 1.3rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .phase ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .phase ul li::before {
+      content: "✔ ";
+      color: green;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        max-width: 90%;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .phase h2 {
+        font-size: 1.1rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h2>Disk Scheduling Visualizer</h2>
+    <ul>
+      <li><a href="entry.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="index.html" class="active">Visualizer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Waterfall Model - Project Development</h1>
+    <p>
+      The Waterfall Model is a traditional software development methodology that divides the project into linear phases. Below is how our project, <strong>Disk Scheduling Algorithm Visualizer</strong>, followed this model.
+    </p>
+
+    <!-- Phase 1 -->
+    <div class="phase">
+      <h2><i class="fa-solid fa-clipboard-list"></i> 1. Requirement Analysis</h2>
+      <p>In this phase, we gathered and documented all project requirements. The aim was to create a tool that:</p>
+      <ul>
+        <li>Takes disk I/O requests as input</li>
+        <li>Accepts initial head position</li>
+        <li>Allows the user to select an algorithm (FCFS, SSTF, SCAN, LOOK, etc.)</li>
+        <li>Visualizes head movement in a graphical format</li>
+        <li>Displays seek time and access order</li>
+      </ul>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="phase">
+      <h2><i class="fa-solid fa-diagram-project"></i> 2. System Design</h2>
+      <p>We structured the system into multiple components:</p>
+      <ul>
+        <li>UI built with HTML, CSS, JavaScript</li>
+        <li>Separate modules for input handling, logic, and output visualization</li>
+        <li>Use of graphs or canvas to show head movements</li>
+        <li>Navigation between pages and responsive design</li>
+      </ul>
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="phase">
+      <h2><i class="fa-solid fa-code"></i> 3. Implementation</h2>
+      <p>Actual coding was done during this phase. The project was implemented using:</p>
+      <ul>
+        <li>HTML for structure</li>
+        <li>CSS for design and responsiveness</li>
+        <li>JavaScript for algorithm simulation and logic handling</li>
+        <li>Canvas/SVG for visualizing disk head movements dynamically</li>
+      </ul>
+    </div>
+
+    <!-- Phase 4 -->
+    <div class="phase">
+      <h2><i class="fa-solid fa-vial"></i> 4. Testing</h2>
+      <p>We tested the application thoroughly:</p>
+      <ul>
+        <li>Verified correct working of each algorithm with various test cases</li>
+        <li>Checked UI responsiveness on different screen sizes</li>
+        <li>Ensured proper input validation (e.g., non-numeric inputs)</li>
+        <li>Bug fixes and optimization for smoother visuals</li>
+      </ul>
+    </div>
+
+    <!-- Phase 5 -->
+    <div class="phase">
+      <h2><i class="fa-solid fa-cloud-arrow-up"></i> 5. Deployment</h2>
+      <p>After successful testing, we deployed the project:</p>
+      <ul>
+        <li>Made project files ready for local and online hosting</li>
+        <li>Shared with mentor and peers for feedback</li>
+        <li>Can be uploaded to GitHub or any static site host like Netlify or Vercel</li>
+      </ul>
+    </div>
+
+    <!-- Phase 6 -->
+    <div class="phase">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> 6. Maintenance</h2>
+      <p>Even after deployment, some tweaks were needed:</p>
+      <ul>
+        <li>Minor bug fixing based on user feedback</li>
+        <li>Adding features like reset input or better animation</li>
+        <li>Future scope includes adding more algorithms or disk types</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
